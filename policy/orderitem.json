@@ -1,0 +1,7 @@
+{
+  "match": {
+    "indices": "orderitem",
+    "match_field": "order_id",
+    "enrich_fields": ["product"]
+  }
+}

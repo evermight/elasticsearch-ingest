@@ -1,0 +1,13 @@
+{
+  "processors" : [
+    {
+      "enrich" : {
+        "description": "Add 'geo' data based on 'zip'",
+        "policy_name": "zipgeo-policy",
+        "field" : "zip",
+        "target_field": "geo",
+        "max_matches": "1"
+      }
+    }
+  ]
+}

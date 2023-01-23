@@ -1,0 +1,7 @@
+{
+  "match": {
+    "indices": "customer",
+    "match_field": "customer_id",
+    "enrich_fields": ["address", "birth_year", "city", "geo", "state", "zip"]
+  }
+}

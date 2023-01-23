@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "geo": {
+      "properties": {
+        "point": {
+          "type": "geo_point"
+	}
+      }
+    }
+  }
+}

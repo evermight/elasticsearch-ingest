@@ -1,0 +1,7 @@
+{
+  "match": {
+    "indices": "zipgeo",
+    "match_field": "zip",
+    "enrich_fields": ["point"]
+  }
+}

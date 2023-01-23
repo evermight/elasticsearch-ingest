@@ -1,0 +1,235 @@
+customer_id,address,city,state,zip,birth_year
+1,777 Brockton Avenue,Abington,MA,2351,1996
+2,30 Memorial Drive,Avon,MA,2322,1977
+3,250 Hartford Avenue,Bellingham,MA,2019,1964
+4,700 Oak Street,Brockton,MA,2301,1989
+5,66-4 Parkhurst Rd,Chelmsford,MA,1824,2011
+6,591 Memorial Dr,Chicopee,MA,1020,1954
+7,55 Brooksby Village Way,Danvers,MA,1923,1964
+8,137 Teaticket Hwy,East Falmouth,MA,2536,1953
+9,42 Fairhaven Commons Way,Fairhaven,MA,2719,1985
+10,374 William S Canning Blvd,Fall River,MA,2721,1953
+11,121 Worcester Rd,Framingham,MA,1701,1975
+12,677 Timpany Blvd,Gardner,MA,1440,2002
+13,337 Russell St,Hadley,MA,1035,2008
+14,295 Plymouth Street,Halifax,MA,2338,1967
+15,1775 Washington St,Hanover,MA,2339,2008
+16,280 Washington Street,Hudson,MA,1749,1956
+17,20 Soojian Dr,Leicester,MA,1524,2013
+18,11 Jungle Road,Leominster,MA,1453,1965
+19,301 Massachusetts Ave,Lunenburg,MA,1462,2015
+20,780 Lynnway,Lynn,MA,1905,1979
+21,70 Pleasant Valley Street,Methuen,MA,1844,1999
+22,830 Curran Memorial Hwy,North Adams,MA,1247,1984
+23,1470 S Washington St,North Attleboro,MA,2760,2012
+24,506 State Road,North Dartmouth,MA,2747,2000
+25,742 Main Street,North Oxford,MA,1537,2005
+26,72 Main St,North Reading,MA,1864,1979
+27,200 Otis Street,Northborough,MA,1532,1959
+28,180 North King Street,Northhampton,MA,1060,1968
+29,555 East Main St,Orange,MA,1364,1993
+30,555 Hubbard Ave-Suite 12,Pittsfield,MA,1201,2005
+31,300 Colony Place,Plymouth,MA,2360,2013
+32,301 Falls Blvd,Quincy,MA,2169,1950
+33,36 Paramount Drive,Raynham,MA,2767,1970
+34,450 Highland Ave,Salem,MA,1970,1950
+35,1180 Fall River Avenue,Seekonk,MA,2771,1980
+36,1105 Boston Road,Springfield,MA,1119,1988
+37,100 Charlton Road,Sturbridge,MA,1566,1952
+38,262 Swansea Mall Dr,Swansea,MA,2777,2009
+39,333 Main Street,Tewksbury,MA,1876,2015
+40,550 Providence Hwy,Walpole,MA,2081,1978
+41,352 Palmer Road,Ware,MA,1082,1960
+42,3005 Cranberry Hwy Rt 6 28,Wareham,MA,2538,1974
+43,250 Rt 59,Airmont,NY,10901,1962
+44,141 Washington Ave Extension,Albany,NY,12205,1981
+45,13858 Rt 31 W,Albion,NY,14411,2015
+46,2055 Niagara Falls Blvd,Amherst,NY,14228,1964
+47,101 Sanford Farm Shpg Center,Amsterdam,NY,12010,1989
+48,297 Grant Avenue,Auburn,NY,13021,2002
+49,4133 Veterans Memorial Drive,Batavia,NY,14020,1992
+50,6265 Brockport Spencerport Rd,Brockport,NY,14420,1957
+51,5399 W Genesse St,Camillus,NY,13031,2011
+52,3191 County rd 10,Canandaigua,NY,14424,1977
+53,30 Catskill,Catskill,NY,12414,2011
+54,161 Centereach Mall,Centereach,NY,11720,1958
+55,3018 East Ave,Central Square,NY,13036,1998
+56,100 Thruway Plaza,Cheektowaga,NY,14225,1959
+57,8064 Brewerton Rd,Cicero,NY,13039,1952
+58,5033 Transit Road,Clarence,NY,14031,1979
+59,3949 Route 31,Clay,NY,13041,1960
+60,139 Merchant Place,Cobleskill,NY,12043,2005
+61,85 Crooked Hill Road,Commack,NY,11725,1954
+62,872 Route 13,Cortlandville,NY,13045,1959
+63,279 Troy Road,East Greenbush,NY,12061,1964
+64,2465 Hempstead Turnpike,East Meadow,NY,11554,1973
+65,6438 Basile Rowe,East Syracuse,NY,13057,1950
+66,25737 US Rt 11,Evans Mills,NY,13637,1996
+67,901 Route 110,Farmingdale,NY,11735,1975
+68,2400 Route 9,Fishkill,NY,12524,1996
+69,10401 Bennett Road,Fredonia,NY,14063,1970
+70,1818 State Route 3,Fulton,NY,13069,1986
+71,4300 Lakeville Road,Geneseo,NY,14454,1964
+72,990 Route 5 20,Geneva,NY,14456,1997
+73,311 RT 9W,Glenmont,NY,12077,2008
+74,200 Dutch Meadows Ln,Glenville,NY,12302,1994
+75,100 Elm Ridge Center Dr,Greece,NY,14626,2004
+76,1549 Rt 9,Halfmoon,NY,12065,1950
+77,5360 Southwestern Blvd,Hamburg,NY,14075,1978
+78,103 North Caroline St,Herkimer,NY,13350,1999
+79,1000 State Route 36,Hornell,NY,14843,1975
+80,1400 County Rd 64,Horseheads,NY,14845,1982
+81,135 Fairgrounds Memorial Pkwy,Ithaca,NY,14850,2014
+82,2 Gannett Dr,Johnson City,NY,13790,1990
+83,233 5th Ave Ext,Johnstown,NY,12095,1984
+84,601 Frank Stottile Blvd,Kingston,NY,12401,2011
+85,350 E Fairmount Ave,Lakewood,NY,14750,1982
+86,4975 Transit Rd,Lancaster,NY,14086,2002
+87,579 Troy-Schenectady Road,Latham,NY,12110,1999
+88,5783 So Transit Road,Lockport,NY,14094,1968
+89,7155 State Rt 12 S,Lowville,NY,13367,2013
+90,425 Route 31,Macedon,NY,14502,1987
+91,3222 State Rt 11,Malone,NY,12953,1966
+92,200 Sunrise Mall,Massapequa,NY,11758,2000
+93,43 Stephenville St,Massena,NY,13662,1967
+94,750 Middle Country Road,Middle Island,NY,11953,1989
+95,470 Route 211 East,Middletown,NY,10940,1958
+96,3133 E Main St,Mohegan Lake,NY,10547,1957
+97,288 Larkin,Monroe,NY,10950,1962
+98,41 Anawana Lake Road,Monticello,NY,12701,1978
+99,4765 Commercial Drive,New Hartford,NY,13413,1997
+100,1201 Rt 300,Newburgh,NY,12550,1951
+101,255 W Main St,Avon,CT,6001,1961
+102,120 Commercial Parkway,Branford,CT,6405,1982
+103,1400 Farmington Ave,Bristol,CT,6010,1956
+104,161 Berlin Road,Cromwell,CT,6416,1984
+105,67 Newton Rd,Danbury,CT,6810,2002
+106,656 New Haven Ave,Derby,CT,6418,1960
+107,69 Prospect Hill Road,East Windsor,CT,6088,1965
+108,150 Gold Star Hwy,Groton,CT,6340,1967
+109,900 Boston Post Road,Guilford,CT,6437,1993
+110,2300 Dixwell Ave,Hamden,CT,6514,1983
+111,495 Flatbush Ave,Hartford,CT,6106,1981
+112,180 River Rd,Lisbon,CT,6351,2009
+113,420 Buckland Hills Dr,Manchester,CT,6040,1951
+114,1365 Boston Post Road,Milford,CT,6460,1958
+115,1100 New Haven Road,Naugatuck,CT,6770,1974
+116,315 Foxon Blvd,New Haven,CT,6513,1953
+117,164 Danbury Rd,New Milford,CT,6776,1992
+118,3164 Berlin Turnpike,Newington,CT,6111,2001
+119,474 Boston Post Road,North Windham,CT,6256,1962
+120,650 Main Ave,Norwalk,CT,6851,2011
+121,680 Connecticut Avenue,Norwalk,CT,6854,1955
+122,220 Salem Turnpike,Norwich,CT,6360,2003
+123,655 Boston Post Rd,Old Saybrook,CT,6475,1994
+124,625 School Street,Putnam,CT,6260,1977
+125,80 Town Line Rd,Rocky Hill,CT,6067,2015
+126,465 Bridgeport Avenue,Shelton,CT,6484,1965
+127,235 Queen St,Southington,CT,6489,1962
+128,150 Barnum Avenue Cutoff,Stratford,CT,6614,1995
+129,970 Torringford Street,Torrington,CT,6790,2002
+130,844 No Colony Road,Wallingford,CT,6492,1984
+131,910 Wolcott St,Waterbury,CT,6705,1990
+132,155 Waterford Parkway No,Waterford,CT,6385,1990
+133,515 Sawmill Road,West Haven,CT,6516,2007
+134,2473 Hackworth Road,Adamsville,AL,35005,1998
+135,630 Coonial Promenade Pkwy,Alabaster,AL,35007,1954
+136,2643 Hwy 280 West,Alexander City,AL,35010,1997
+137,540 West Bypass,Andalusia,AL,36420,1957
+138,5560 Mcclellan Blvd,Anniston,AL,36206,1987
+139,1450 No Brindlee Mtn Pkwy,Arab,AL,35016,1980
+140,1011 US Hwy 72 East,Athens,AL,35611,2011
+141,973 Gilbert Ferry Road Se,Attalla,AL,35954,1956
+142,1717 South College Street,Auburn,AL,36830,2002
+143,701 Mcmeans Ave,Bay Minette,AL,36507,1971
+144,750 Academy Drive,Bessemer,AL,35022,1972
+145,312 Palisades Blvd,Birmingham,AL,35209,1978
+146,1600 Montclair Rd,Birmingham,AL,35210,1956
+147,5919 Trussville Crossings Pkwy,Birmingham,AL,35235,2007
+148,9248 Parkway East,Birmingham,AL,35206,2007
+149,1972 Hwy 431,Boaz,AL,35957,1960
+150,10675 Hwy 5,Brent,AL,35034,1995
+151,2041 Douglas Avenue,Brewton,AL,36426,1965
+152,5100 Hwy 31,Calera,AL,35040,1989
+153,1916 Center Point Rd,Center Point,AL,35215,1978
+154,1950 W Main St,Centre,AL,35960,1999
+155,16077 Highway 280,Chelsea,AL,35043,2003
+156,1415 7Th Street South,Clanton,AL,35045,1971
+157,626 Olive Street Sw,Cullman,AL,35055,1994
+158,27520 Hwy 98,Daphne,AL,36526,1997
+159,2800 Spring Avn SW,Decatur,AL,35603,2003
+160,969 Us Hwy 80 West,Demopolis,AL,36732,1967
+161,3300 South Oates Street,Dothan,AL,36301,1959
+162,4310 Montgomery Hwy,Dothan,AL,36303,1999
+163,600 Boll Weevil Circle,Enterprise,AL,36330,1957
+164,3176 South Eufaula Avenue,Eufaula,AL,36027,1993
+165,7100 Aaron Aronov Drive,Fairfield,AL,35064,1953
+166,10040 County Road 48,Fairhope,AL,36533,1964
+167,3186 Hwy 171 North,Fayette,AL,35555,1967
+168,3100 Hough Rd,Florence,AL,35630,1956
+169,2200 South Mckenzie St,Foley,AL,36535,1958
+170,2001 Glenn Bldv Sw,Fort Payne,AL,35968,1984
+171,340 East Meighan Blvd,Gadsden,AL,35903,1973
+172,890 Odum Road,Gardendale,AL,35071,1986
+173,1608 W Magnolia Ave,Geneva,AL,36340,1984
+174,501 Willow Lane,Greenville,AL,36037,1982
+175,170 Fort Morgan Road,Gulf Shores,AL,36542,1952
+176,11697 US Hwy 431,Guntersville,AL,35976,2002
+177,42417 Hwy 195,Haleyville,AL,35565,2006
+178,1706 Military Street South,Hamilton,AL,35570,2001
+179,1201 Hwy 31 NW,Hartselle,AL,35640,1952
+180,209 Lakeshore Parkway,Homewood,AL,35209,1988
+181,2780 John Hawkins Pkwy,Hoover,AL,35244,1970
+182,5335 Hwy 280 South,Hoover,AL,35242,1980
+183,1007 Red Farmer Drive,Hueytown,AL,35023,2004
+184,2900 S Mem PkwyDrake Ave,Huntsville,AL,35801,1987
+185,11610 Memorial Pkwy South,Huntsville,AL,35803,1953
+186,2200 Sparkman Drive,Huntsville,AL,35810,1982
+187,330 Sutton Rd,Huntsville,AL,35763,1953
+188,6140A Univ Drive,Huntsville,AL,35806,2007
+189,4206 N College Ave,Jackson,AL,36545,1983
+190,1625 Pelham South,Jacksonville,AL,36265,1989
+191,1801 Hwy 78 East,Jasper,AL,35501,1980
+192,8551 Whitfield Ave,Leeds,AL,35094,1988
+193,8650 Madison Blvd,Madison,AL,35758,2004
+194,145 Kelley Blvd,Millbrook,AL,36054,1979
+195,1970 S University Blvd,Mobile,AL,36609,1959
+196,6350 Cottage Hill Road,Mobile,AL,36609,1995
+197,101 South Beltline Highway,Mobile,AL,36606,1975
+198,2500 Dawes Road,Mobile,AL,36695,1955
+199,5245 Rangeline Service Rd,Mobile,AL,36619,1988
+200,685 Schillinger Rd,Mobile,AL,36695,1974
+201,3371 S Alabama Ave,Monroeville,AL,36460,1971
+202,10710 Chantilly Pkwy,Montgomery,AL,36117,1974
+203,3801 Eastern Blvd,Montgomery,AL,36116,1984
+204,6495 Atlanta Hwy,Montgomery,AL,36117,1999
+205,851 Ann St,Montgomery,AL,36107,2011
+206,15445 Highway 24,Moulton,AL,35650,1986
+207,517 West Avalon Ave,Muscle Shoals,AL,35661,2013
+208,5710 Mcfarland Blvd,Northport,AL,35476,1968
+209,2453 2Nd Avenue East,Oneonta,AL,35121,2008
+210,2900 Pepperrell Pkwy,Opelika,AL,36801,1950
+211,92 Plaza Lane,Oxford,AL,36203,1955
+212,1537 Hwy 231 South,Ozark,AL,36360,1984
+213,2181 Pelham Pkwy,Pelham,AL,35124,1988
+214,165 Vaughan Ln,Pell City,AL,35125,2001
+215,3700 Hwy 280-431 N,Phenix City,AL,36867,1983
+216,1903 Cobbs Ford Rd,Prattville,AL,36066,2015
+217,4180 Us Hwy 431,Roanoke,AL,36274,1974
+218,13675 Hwy 43,Russellville,AL,35653,1967
+219,1095 Industrial Pkwy,Saraland,AL,36571,1967
+220,24833 Johnt Reidprkw,Scottsboro,AL,35768,2009
+221,1501 Hwy 14 East,Selma,AL,36703,1993
+222,7855 Moffett Rd,Semmes,AL,36575,2007
+223,150 Springville Station Blvd,Springville,AL,35146,2004
+224,690 Hwy 78,Sumiton,AL,35148,1959
+225,41301 US Hwy 280,Sylacauga,AL,35150,2011
+226,214 Haynes Street,Talladega,AL,35160,1979
+227,1300 Gilmer Ave,Tallassee,AL,36078,1965
+228,34301 Hwy 43,Thomasville,AL,36784,1954
+229,1420 Us 231 South,Troy,AL,36081,1988
+230,1501 Skyland Blvd E,Tuscaloosa,AL,35405,1995
+231,3501 20th Av,Valley,AL,36854,2002
+232,1300 Montgomery Highway,Vestavia Hills,AL,35216,1960
+233,4538 Us Hwy 231,Wetumpka,AL,36092,1983
+234,2575 Us Hwy 43,Winfield,AL,35594,2006

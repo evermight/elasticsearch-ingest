@@ -1,0 +1,7 @@
+{
+  "match": {
+    "indices": "product",
+    "match_field": "product_id",
+    "enrich_fields": ["name", "price"]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "processors" : [
+    {
+      "enrich" : {
+        "description": "Add 'product' data based on 'product_id'",
+        "policy_name": "product-policy",
+        "field" : "product_id",
+        "target_field": "product",
+        "max_matches": "1"
+      }
+    }
+  ]
+}

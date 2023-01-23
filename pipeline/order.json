@@ -1,0 +1,23 @@
+{
+  "processors" : [
+    {
+      "enrich" : {
+        "description": "Add 'orderitems' data based on 'order_id'",
+        "policy_name": "orderitem-policy",
+        "field" : "order_id",
+        "target_field": "orderitems",
+        "ignore_missing": true,
+        "max_matches": "100"
+      }
+    },
+    {
+      "enrich" : {
+        "description": "Add 'customer' data based on 'customer_id'",
+        "policy_name": "customer-policy",
+        "field" : "customer_id",
+        "target_field": "customer",
+        "max_matches": "1"
+      }
+    }
+  ]
+}

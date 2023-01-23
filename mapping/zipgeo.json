@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "zip": {
+      "type": "long"
+    },
+    "point": {
+      "type": "geo_point"
+    }
+  }
+}
