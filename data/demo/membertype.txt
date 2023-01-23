@@ -1,0 +1,62 @@
+// Create index for membertypes
+PUT membertypes
+{
+  "mappings": {
+    "properties": {
+      "price_range": {
+        "type": "integer_range"
+      },
+      "membertype": {
+        "type": "keyword"
+      }
+    }
+  }
+}
+
+// Insert two member types: regular and premium
+POST membertypes/_doc
+{
+  "price_range" : {
+    "lte": 5
+  },
+  "membertype" : "regular"
+}
+
+POST membertypes/_doc
+{
+  "price_range" : {
+    "gt": 5
+  },
+  "membertype" : "premium"
+}
+
+// Test to see results of member types
+GET membertypes/_search
+
+// Create membertypes policy
+PUT /_enrich/policy/membertypes-policy
+{
+  "range": {
+    "indices": "membertypes",
+    "match_field": "price_range",
+    "enrich_fields": ["membertype"]
+  }
+}
+
+PUT /_enrich/policy/membertypes-policy/_execute
+
+// Setup membertypes pipeline for API usage
+PUT /_ingest/pipeline/membertypes_lookup
+{
+  "processors" : [
+    {
+      "enrich" : {
+        "description": "Add 'membertype' data based on 'paid_amount'",
+        "policy_name": "membertypes-policy",
+        "field" : "paid_amount",
+        "target_field": "membertype",
+        "max_matches": "1"
+      }
+    }
+  ]
+}
