@@ -1,16 +1,15 @@
 {
   "properties": {
-    "customer":
-{
-  "properties": {
-    "geo": {
+    "customer": {
       "properties": {
-        "point": {
-          "type": "geo_point"
-	}
+        "geo": {
+          "properties": {
+            "point": {
+             "type": "geo_point"
+	    }
+          }
+        }
       }
     }
-  }
-}
   }
 }
