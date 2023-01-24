@@ -1,0 +1,11 @@
+// Create membertype policy
+PUT /_enrich/policy/membertype-policy
+{
+  "range": {
+    "indices": "membertype",
+    "match_field": "price_range",
+    "enrich_fields": ["membertype"]
+  }
+}
+
+PUT /_enrich/policy/membertype-policy/_execute

@@ -1,0 +1,11 @@
+// Create users policy
+PUT /_enrich/policy/user-policy
+{
+  "match": {
+    "indices": "user",
+    "match_field": "email",
+    "enrich_fields": ["first_name", "last_name", "city", "zip", "state"]
+  }
+}
+
+PUT /_enrich/policy/user-policy/_execute

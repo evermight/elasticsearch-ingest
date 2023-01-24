@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "email": {
+      "type": "keyword"
+    },
+    "location_id": {
+      "type": "long"
+    },
+    "paid_amount": {
+      "type": "long"
+    },
+    "product": {
+      "type": "keyword"
+    },
+    "geo": {
+      "properties": {
+        "point": {
+          "type": "geo_point"
+	}
+      }
+    }
+  }
+}

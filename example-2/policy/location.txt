@@ -1,0 +1,10 @@
+PUT /_enrich/policy/location-policy
+{
+  "match": {
+    "indices": "location",
+    "match_field": "location_id",
+    "enrich_fields": ["point"]
+  }
+}
+
+PUT /_enrich/policy/location-policy/_execute

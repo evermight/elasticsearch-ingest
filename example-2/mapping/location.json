@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "properties": {
+      "point": {
+        "type": "geo_point"
+      },
+      "location_id": {
+        "type": "long"
+      }
+    }
+  }
+}

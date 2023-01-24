@@ -1,0 +1,3 @@
+price_range,customertype
+"{""lte"":5}",regular
+"{""gt"":5}",premium

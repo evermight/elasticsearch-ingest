@@ -1,0 +1,63 @@
+{
+  "description": "Ingest pipeline created by text structure finder",
+  "processors": [
+    {
+      "csv": {
+        "field": "message",
+        "target_fields": [
+          "email",
+          "product",
+          "paid_amount",
+          "location_id"
+        ],
+        "ignore_missing": false
+      }
+    },
+    {
+      "convert": {
+        "field": "location_id",
+        "type": "long",
+        "ignore_missing": true
+      }
+    },
+    {
+      "convert": {
+        "field": "paid_amount",
+        "type": "long",
+        "ignore_missing": true
+      }
+    },
+    {
+      "enrich" : {
+        "description": "Add 'user' data based on 'email'",
+        "policy_name": "user-policy",
+        "field" : "email",
+        "target_field": "user",
+        "max_matches": "1"
+      }
+    },
+    {
+      "enrich" : {
+        "description": "Add 'membertype' data based on 'paid_amount'",
+        "policy_name": "membertype-policy",
+        "field" : "paid_amount",
+        "target_field": "membertype",
+        "max_matches": "1"
+      }
+    },
+    {
+      "enrich" : {
+        "description": "Add 'geo' data based on 'location_id'",
+        "policy_name": "location-policy",
+        "field" : "location_id",
+        "target_field": "geo",
+        "max_matches": "1"
+      }
+    },
+    {
+      "remove": {
+        "field": "message"
+      }
+    }
+  ]
+}

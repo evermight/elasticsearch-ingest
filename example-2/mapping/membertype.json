@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "properties": {
+      "price_range": {
+        "type": "integer_range"
+      },
+      "membertype": {
+        "type": "keyword"
+      }
+    }
+  }
+}

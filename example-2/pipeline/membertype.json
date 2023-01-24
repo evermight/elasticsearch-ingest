@@ -1,0 +1,25 @@
+{
+  "description": "Ingest pipeline created by text structure finder",
+  "processors": [
+    {
+      "csv": {
+        "field": "message",
+        "target_fields": [
+          "price_range",
+          "membertype"
+        ],
+        "ignore_missing": false
+      }
+    },
+    {
+      "json" : {
+        "field" : "price_range"
+      }
+    },
+    {
+      "remove": {
+        "field": "message"
+      }
+    }
+  ]
+}
