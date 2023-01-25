@@ -1,6 +1,6 @@
 {
   "match": {
-    "indices": "zipgeo",
+    "indices": "zip_geo",
     "match_field": "zip",
     "enrich_fields": ["point"]
   }

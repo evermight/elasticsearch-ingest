@@ -2,7 +2,7 @@
 
 source ./.env
 
-logstashconf=`cat ${PROJECTPATH}/logstash/zipgeo.conf`
+logstashconf=`cat ${PROJECTPATH}/logstash/zip_geo.conf`
 logstashconf="${logstashconf//\#\#PROJECTPATH\#\#/"$PROJECTPATH"}"
 logstashconf="${logstashconf//\#\#ELASTICHOST\#\#/"$ELASTICHOST"}"
 logstashconf="${logstashconf//\#\#ELASTICSSL\#\#/"$ELASTICSSL"}"
@@ -14,10 +14,10 @@ if [ "$ELASTICSSL" = "true" ]; then
   hostprotocol="https"
 fi
 
-curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/zipgeo"
-curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/zipgeo/_mapping" \
+curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/zip_geo"
+curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/zip_geo/_mapping" \
 -H "Content-Type: application/json" \
--d @/root/setup/mapping/zipgeo.json
+-d @$PROJECTPATH/mapping/zip_geo.json
 
 
 
@@ -25,11 +25,11 @@ curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/zipgeo/_m
 
 /usr/share/logstash/bin/logstash -e "$logstashconf"
 
-curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/zipgeo-policy" \
+curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/zip_geo_policy" \
 -H "Content-Type: application/json" \
--d @$PROJECTPATH/policy/zipgeo.json
+-d @$PROJECTPATH/policy/zip_geo.json
 
 sleep 30
-curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/zipgeo-policy/_execute"
+curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/zip_geo_policy/_execute"
 
 

@@ -2,7 +2,7 @@
 
 source ./.env
 
-logstashconf=`cat ${PROJECTPATH}/logstash/product.conf`
+logstashconf=`cat ${PROJECTPATH}/logstash/order_item.conf`
 logstashconf="${logstashconf//\#\#PROJECTPATH\#\#/"$PROJECTPATH"}"
 logstashconf="${logstashconf//\#\#ELASTICHOST\#\#/"$ELASTICHOST"}"
 logstashconf="${logstashconf//\#\#ELASTICSSL\#\#/"$ELASTICSSL"}"
@@ -19,17 +19,17 @@ fi
 
 
 
-
-
-
+curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_ingest/pipeline/order_item_pipeline" \
+-H "Content-Type: application/json" \
+-d @$PROJECTPATH/pipeline/order_item.json
 
 /usr/share/logstash/bin/logstash -e "$logstashconf"
 
-curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/product-policy" \
+curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/order_item_policy" \
 -H "Content-Type: application/json" \
--d @$PROJECTPATH/policy/product.json
+-d @$PROJECTPATH/policy/order_item.json
 
 sleep 60
-curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/product-policy/_execute"
+curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/order_item_policy/_execute"
 
 

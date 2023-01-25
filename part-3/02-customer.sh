@@ -17,19 +17,19 @@ fi
 curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/customer"
 curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/customer/_mapping" \
 -H "Content-Type: application/json" \
--d @/root/setup/mapping/customer.json
+-d @$PROJECTPATH/mapping/customer.json
 
 curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_ingest/pipeline/customer_pipeline" \
 -H "Content-Type: application/json" \
--d @/root/setup/pipeline/customer.json
+-d @$PROJECTPATH/pipeline/customer.json
 
 /usr/share/logstash/bin/logstash -e "$logstashconf"
 
-curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/customer-policy" \
+curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/customer_policy" \
 -H "Content-Type: application/json" \
 -d @$PROJECTPATH/policy/customer.json
 
 sleep 30
-curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/customer-policy/_execute"
+curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/customer_policy/_execute"
 
 

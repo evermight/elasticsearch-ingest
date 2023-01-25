@@ -3,7 +3,7 @@
     {
       "enrich" : {
         "description": "Add 'product' data based on 'product_id'",
-        "policy_name": "product-policy",
+        "policy_name": "product_policy",
         "field" : "product_id",
         "target_field": "product",
         "max_matches": "1"

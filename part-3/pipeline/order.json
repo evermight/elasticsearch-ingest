@@ -2,10 +2,10 @@
   "processors" : [
     {
       "enrich" : {
-        "description": "Add 'orderitems' data based on 'order_id'",
-        "policy_name": "orderitem-policy",
+        "description": "Add 'order_items' data based on 'order_id'",
+        "policy_name": "order_item_policy",
         "field" : "order_id",
-        "target_field": "orderitems",
+        "target_field": "order_items",
         "ignore_missing": true,
         "max_matches": "100"
       }
@@ -13,7 +13,7 @@
     {
       "enrich" : {
         "description": "Add 'customer' data based on 'customer_id'",
-        "policy_name": "customer-policy",
+        "policy_name": "customer_policy",
         "field" : "customer_id",
         "target_field": "customer",
         "max_matches": "1"
