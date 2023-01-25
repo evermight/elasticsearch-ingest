@@ -1,4 +1,4 @@
-PUT /_enrich/policy/location-policy
+PUT /_enrich/policy/location_policy
 {
   "match": {
     "indices": "location",
@@ -7,4 +7,4 @@ PUT /_enrich/policy/location-policy
   }
 }
 
-PUT /_enrich/policy/location-policy/_execute
+PUT /_enrich/policy/location_policy/_execute

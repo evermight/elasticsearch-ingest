@@ -1,5 +1,5 @@
 // Create users policy
-PUT /_enrich/policy/user-policy
+PUT /_enrich/policy/user_policy
 {
   "match": {
     "indices": "user",
@@ -8,4 +8,4 @@ PUT /_enrich/policy/user-policy
   }
 }
 
-PUT /_enrich/policy/user-policy/_execute
+PUT /_enrich/policy/user_policy/_execute

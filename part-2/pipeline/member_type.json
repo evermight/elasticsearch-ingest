@@ -6,7 +6,7 @@
         "field": "message",
         "target_fields": [
           "price_range",
-          "membertype"
+          "member_type"
         ],
         "ignore_missing": false
       }
