@@ -2,13 +2,6 @@
 
 source ./.env
 
-logstashconf=`cat ${PROJECTPATH}/logstash/customer.conf`
-logstashconf="${logstashconf//\#\#PROJECTPATH\#\#/"$PROJECTPATH"}"
-logstashconf="${logstashconf//\#\#ELASTICHOST\#\#/"$ELASTICHOST"}"
-logstashconf="${logstashconf//\#\#ELASTICSSL\#\#/"$ELASTICSSL"}"
-logstashconf="${logstashconf//\#\#ELASTICUSER\#\#/"$ELASTICUSER"}"
-logstashconf="${logstashconf//\#\#ELASTICPASS\#\#/"$ELASTICPASS"}"
-
 hostprotocol="http"
 if [ "$ELASTICSSL" = "true" ]; then
   hostprotocol="https"
@@ -23,6 +16,12 @@ curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_ingest/p
 -H "Content-Type: application/json" \
 -d @$PROJECTPATH/pipeline/customer.json
 
+logstashconf=`cat ${PROJECTPATH}/logstash/customer.conf`
+logstashconf="${logstashconf//\#\#PROJECTPATH\#\#/"$PROJECTPATH"}"
+logstashconf="${logstashconf//\#\#ELASTICHOST\#\#/"$ELASTICHOST"}"
+logstashconf="${logstashconf//\#\#ELASTICSSL\#\#/"$ELASTICSSL"}"
+logstashconf="${logstashconf//\#\#ELASTICUSER\#\#/"$ELASTICUSER"}"
+logstashconf="${logstashconf//\#\#ELASTICPASS\#\#/"$ELASTICPASS"}"
 /usr/share/logstash/bin/logstash -e "$logstashconf"
 
 curl -X PUT -u $ELASTICUSER:$ELASTICPASS "$hostprotocol://$ELASTICHOST/_enrich/policy/customer_policy" \
