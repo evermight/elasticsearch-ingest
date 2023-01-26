@@ -38,7 +38,7 @@
     },
     {
       "enrich" : {
-        "description": "Add 'membertype' data based on 'paid_amount'",
+        "description": "Add 'member_type' data based on 'paid_amount'",
         "policy_name": "member_type_policy",
         "field" : "paid_amount",
         "target_field": "member_type",

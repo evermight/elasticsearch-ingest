@@ -1,4 +1,4 @@
-// Create membertype policy
+// Create member_type policy
 PUT /_enrich/policy/member_type_policy
 {
   "range": {

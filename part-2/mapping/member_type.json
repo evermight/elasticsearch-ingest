@@ -4,7 +4,7 @@
       "price_range": {
         "type": "integer_range"
       },
-      "membertype": {
+      "member_type": {
         "type": "keyword"
       }
     }
