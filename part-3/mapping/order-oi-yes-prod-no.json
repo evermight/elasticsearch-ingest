@@ -1,12 +1,12 @@
 {
   "properties": {
     "order_items": {
+      "type": "nested",
       "properties": {
         "product_id": {
           "type": "long"
         },
         "product": {
-          "type": "nested",
           "properties": {
             "name": {
               "type": "keyword"

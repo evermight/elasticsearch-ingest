@@ -6,7 +6,6 @@
           "type": "long"
         },
         "product": {
-          "type": "nested",
           "properties": {
             "name": {
               "type": "keyword"
@@ -22,7 +21,6 @@
       }
     },
     "customer": {
-      "type": "nested",
       "properties": {
         "state": {
           "type": "keyword"
